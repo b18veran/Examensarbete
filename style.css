@@ -1,7 +1,12 @@
+
 #information{
     background-color: rgb(246, 208, 250);
     padding: 10px;
     box-shadow: 0 0 5px 2px rgba(163, 163, 163, 0.5);
+    margin-right: 0;
+}
+#information p{
+  margin-left: 10px;
 }
 .rubrik{
     text-align: center;
