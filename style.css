@@ -12,11 +12,6 @@
     text-align: center;
     padding: 10px;
 }
-.carousel {
-    width:100vw;
-    margin: auto;
-  }
-
   #outputValue{
     display: none;
   }
