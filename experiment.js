@@ -23,7 +23,7 @@ function startUp() {
 
         var delta = localStorage.getItem("Page Loading");
         var measureDiff = theTime;
-        delta += measureDiff + ",\n";
+        delta += measureDiff + "\n";
         localStorage.setItem("Page Loading", delta);
     }
 }
