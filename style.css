@@ -1,0 +1,21 @@
+#information{
+    background-color: rgb(247, 247, 247);
+    padding: 10px;
+    box-shadow: 0 0 5px 2px rgba(163, 163, 163, 0.5);
+}
+.rubrik{
+    text-align: center;
+}
+.carousel {
+    width:100vw;
+    margin: auto;
+  }
+
+  #outputValue{
+    display: none;
+  }
+  .card{
+    box-shadow: 0 0 5px 2px rgba(163, 163, 163, 0.5);
+    margin: 10px;
+  }
+
