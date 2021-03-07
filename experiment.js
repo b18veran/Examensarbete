@@ -2,7 +2,11 @@ var startTime = new Date().getTime();
 var counter = parseInt(localStorage.getItem("Counter", 0));
 
 function startUp() {
-
+     /* Om det är första gången det startas sätts start värdet till 0 och med,
+     ett ',' efter för tydlighet. */
+    if (localStorage.getItem("Page Loading") == null) {
+        localStorage.setItem("Page Loading", 0 + ",\n");
+    }
     // Om countern är null sätts den till 0. 
     if (localStorage.getItem("Counter") == null) {
         localStorage.setItem("Counter", 0);
@@ -17,7 +21,10 @@ function startUp() {
         logo();
         localStorage.getItem(startTime);
 
-
+        var delta = localStorage.getItem("Page Loading");
+        var measureDiff = theTime;
+        delta += measureDiff + ",\n";
+        localStorage.setItem("Page Loading", delta);
     }
 }
 function readMore() {
