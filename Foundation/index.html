@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="assets/css/foundation-float.css">
   <script src="navigation.js"></script>
   <script src="experiment.js"></script>
+  <link rel="stylesheet" href="style.css">
   <!-- Motion UI -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" />
   <!-- Compressed CSS -->
@@ -81,7 +82,7 @@
     </nav>
   </div>
   <!-- Info -->
-  <div class="row">
+  <div class="row" id="information">
     <div class="columns medium-3">
       <p><strong>Beställ</strong><br>
       Välj ut juicerna som passar dig! Lägg dem i kundkorgen och betala.</p>
@@ -100,7 +101,7 @@
     </div>
   </div>
   <!-- Kort -->
-  <h3>Våra produkter</h3>
+  <h3 class="rubrik">Våra produkter</h3>
   <div class="grid-container">
     <div class="grid-x grid-margin-x small-up-3 medium-up-4">
       <div class="cell">
@@ -145,9 +146,9 @@
       </div>
     </div>
   </div>
-  <h3>Erbjudanden</h3>
+  <h3 class="rubrik">Erbjudanden</h3>
   <div class="grid-container">
-    <div class="grid-x grid-margin-x small-up-3 medium-up-4">
+    <div class="grid-x grid-margin-x small-up-3 medium-up-4-centered">
       <div class="cell">
         <div class="card">
           <img src="Images/JFifth.jpg">
@@ -210,7 +211,7 @@
 </div>
 <!------------------------------------------------ Produkter ---------------------------------------------->
 <div id="productsJuice" style="display: none;">
-  <h3>Våra produkter</h3>
+  <h3 class="rubrik">Våra produkter</h3>
   <div class="grid-container">
     <div class="grid-x grid-margin-x small-up-3 medium-up-4">
       <div class="cell">
@@ -257,7 +258,7 @@
   </div>
 </div>
 <div id="productsSmoothie" style="display: none;">
-  <h3>Våra produkter</h3>
+  <h3 class="rubrik">Våra produkter</h3>
   <div class="grid-container">
     <div class="grid-x grid-margin-x small-up-3 medium-up-4">
       <div class="cell">
