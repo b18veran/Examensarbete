@@ -36,9 +36,9 @@
                             Produkter
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" onclick="showProducts();updateHistory('products');">Juicer</a></li>
+                            <li><a class="dropdown-item" onclick="showProductsJuice();updateHistory('productsJuice');">Juicer</a></li>
                             <li><a class="dropdown-item" href="#">Shots</a></li>
-                            <li><a class="dropdown-item" href="#">Smoothies</a></li>
+                            <li><a class="dropdown-item" onclick="showProductsSmoothie();updateHistory('productsSmoothie');">Smoothies</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -122,7 +122,7 @@
                             <h5 class="card-title">Juicer</h5>
                             <p class="card-text">Nypressade juicer i olika smaker för att passa alla olika behov.
                             </p>
-                            <a class="btn btn-primary" onclick="showProducts();updateHistory('products');"  role="button">Gå till alla juicer!</a>
+                            <a class="btn btn-primary" onclick="showProductsJuice();updateHistory('productsJuice');"  role="button">Gå till alla juicer!</a>
                         </div>
                     </div>
                 </div>
@@ -142,7 +142,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Smoothies</h5>
                             <p class="card-text">Nypressade smoothies i olika smaker som passar alla behov.</p>
-                            <a class="btn btn-primary" href="#" role="button">Gå till alla smoothies!</a>
+                            <a class="btn btn-primary" onclick="showProductsSmoothie();updateHistory('productsSmoothie');"  role="button">Gå till alla smoothies!</a>
                         </div>
                     </div>
                 </div>
@@ -222,8 +222,7 @@
     </div>
     <!------------------------------------------------- Produkter ------------------------------------------------>
     <!-- Kort -->
-    <div class="Produkter" id="juice">
-        <div id="products" style="display: none;">
+        <div id="productsJuice" style="display: none;">
             <h3 class="rubrik">Våra juicer</h3>
             <div class="row ">
                 <div class="col ">
@@ -279,7 +278,62 @@
 
             </div>
         </div>
-    </div>
+        <div id="productsSmoothie" style="display: none;">
+            <h3 class="rubrik">Våra smoothies</h3>
+            <div class="row ">
+                <div class="col ">
+                    <div class="card h-80">
+                        <img src="Images/Smoothies/SFirst.jpg" class="card-img-top" alt="Juice">
+                        <div class="card-body">
+                            <h5 class="card-title">Aplesin Juice</h5>
+                            <p class="card-text">This is a short card.</p>
+                            <a class="btn btn-primary" href="ProduktInfo.html" role="button">Läs mer!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="card h-80">
+                        <img src="Images/Smoothies/SSecond.jpg" class="card-img-top" alt="Juice">
+                        <div class="card-body">
+                            <h5 class="card-title">Vattenmelon Juice</h5>
+                            <p class="card-text">This is a short card.</p>
+                            <a class="btn btn-primary" href="ProduktInfo.html" role="button">Läs mer!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="card h-80">
+                        <img src="Images/Smoothies/SThird.jpg" class="card-img-top" alt="Juice">
+                        <div class="card-body">
+                            <h5 class="card-title">Ananas Juice</h5>
+                            <p class="card-text">This is a short card.</p>
+                            <a class="btn btn-primary" href="ProduktInfo.html" role="button">Läs mer!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="card h-80">
+                        <img src="Images/Smoothies/SFourth.jpg" class="card-img-top" alt="Juice">
+                        <div class="card-body">
+                            <h5 class="card-title">Äpple Juice</h5>
+                            <p class="card-text">This is a short card.</p>
+                            <a class="btn btn-primary" href="ProduktInfo.html" role="button">Läs mer!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="card h-80">
+                        <img src="Images/Smoothies/SFifth.jpg" class="card-img-top" alt="Juice">
+                        <div class="card-body">
+                            <h5 class="card-title">Mango Juice</h5>
+                            <p class="card-text">This is a short card.</p>
+                            <a class="btn btn-primary" href="ProduktInfo.html" role="button">Läs mer!</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     <nav class="navbar bottom navbar-light bg-light">
         <div class="navbar-nav text-muted">
             Licens CC0 gäller alla bilder på denna sidan - ändrad av Veronica Andersen

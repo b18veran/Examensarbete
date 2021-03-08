@@ -2,19 +2,27 @@
 function showStart(){
     document.getElementById("start").style.display = "block";
     document.getElementById("productInfo").style.display = "none";
-    document.getElementById("products").style.display = "none";
+    document.getElementById("productsJuice").style.display = "none";
+    document.getElementById("productsSmoothie").style.display = "none";
 }
 function showProductInfo(){
     document.getElementById("start").style.display = "none";
     document.getElementById("productInfo").style.display = "block";
-    document.getElementById("products").style.display = "none";
+    document.getElementById("productsJuice").style.display = "none";
+    document.getElementById("productsSmoothie").style.display = "none";
 }
-function showProducts(){
+function showProductsJuice(){
     document.getElementById("start").style.display = "none";
     document.getElementById("productInfo").style.display = "none";
-    document.getElementById("products").style.display = "block";
+    document.getElementById("productsJuice").style.display = "block";
+    document.getElementById("productsSmoothie").style.display = "none";
 }
-
+function showProductsSmoothie(){
+  document.getElementById("start").style.display = "none";
+  document.getElementById("productInfo").style.display = "none";
+  document.getElementById("productsJuice").style.display = "none";
+  document.getElementById("productsSmoothie").style.display = "block";
+}
 
 
 
@@ -30,8 +38,10 @@ function historyChange(event){
     showStart();
   }else if (event.state=="productInfo") {
     showProductInfo();
-  }else if (event.state=="products") {
-    showProducts();
+  }else if (event.state=="productsJuice") {
+    showProductsJuice();
+  }else if (event.state=="productsSmoothies") {
+    showProductsSmoothie();
   }else{
 
   }
