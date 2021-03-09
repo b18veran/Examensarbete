@@ -1,5 +1,5 @@
 #information {
-  background-color: rgb(246, 208, 250);
+  background-color: rgb(211, 166, 253);
   padding: 10px;
   box-shadow: 0 0 5px 2px rgba(163, 163, 163, 0.5);
   margin-right: 0;
@@ -24,4 +24,12 @@
   width: 300px;
   margin-left: auto;
   margin-right: auto;
+}
+.break{
+  height: 1px;
+  width: 90vw;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(211, 166, 253);
 }
