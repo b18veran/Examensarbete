@@ -34,7 +34,7 @@
         <li class="menu-text">Berryshop</li>
         <li><a id="logo" href="index.html" onclick="updateHistory('start');">Hem</a></li>
         <li>
-          <a >Produkter</a>
+          <a>Produkter</a>
           <ul class="menu vertical">
             <li><a onclick="showProductsJuice();updateHistory('productsJuice');">Juice</a></li>
             <li><a onclick="showProductsShot();updateHistory('productsShot');">Shot</a></li>
@@ -126,7 +126,7 @@
             <div class="card-section">
               <h4>Shot</h4>
               <p>Nypressade shots i olika smaker för att passa alla olika behov.</p>
-              <a class="button">Gå till alla shots!</a>
+              <a onclick="showProductsShot(); updateHistory('productsShot');" class="button">Gå till alla shots!</a>
             </div>
           </div>
         </div>
@@ -147,7 +147,8 @@
             <div class="card-section">
               <h4>Milkshake</h4>
               <p>Välj en milkshake istället åt dig själv för lite vardagslyx.</p>
-              <a class="button">Gå till alla milkshake!</a>
+              <a onclick="showProductsMilkshake(); updateHistory('productsMilkshake');" class="button">Gå till alla
+                milkshake!</a>
             </div>
           </div>
         </div>
@@ -158,7 +159,7 @@
 
     <h3 class="rubrik">Erbjudanden</h3>
     <div class="grid-container">
-      <div class="grid-x grid-margin-x small-up-3 medium-up-4-centered">
+      <div class="grid-x grid-margin-x small-up-3 medium-up-4">
         <div class="cell">
           <div class="card">
             <img src="Images/JFifth.jpg">
