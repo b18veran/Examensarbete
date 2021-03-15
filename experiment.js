@@ -15,31 +15,18 @@ function startUp() {
     if (counter <= 4) {
         var endTime = new Date().getTime();
         var theTime = endTime - startTime;
-        endTime = localStorage.setItem("Tid", JSON.stringify(theTime));
+        endTime = localStorage.setItem("Tid", JSON.stringify(theTime)); 
         counter++;
-        readMore();
         logo();
         localStorage.getItem(startTime);
-
         var delta = localStorage.getItem("Page Loading");
         var measureDiff = theTime;
         delta += measureDiff + "\n";
         localStorage.setItem("Page Loading", delta);
     }
 }
-function readMore() {
-    let donePageLoading = document.readyState; //NOTE! Denna ser till att allt laddats in innan den går vidare.
-    //Klickar på knappen med id readMore
-    var clickEvent = new MouseEvent('click', {
-        view: window,
-        bubbles: true,
-        cancelable: true
-    });
-    document.getElementById("readMore").dispatchEvent(clickEvent);
-    localStorage.setItem('Counter', counter);
-}
 function logo() {
-    let donePageLoading = document.readyState;
+    let donePageLoading = document.readyState; //NOTE! Denna ser till att allt laddats in innan den går vidare.
     //Klickar på knappen med id logo
     var clickEvent = new MouseEvent('click', {
         view: window,
@@ -47,4 +34,5 @@ function logo() {
         cancelable: true
     });
     document.getElementById("logo").dispatchEvent(clickEvent);
+    localStorage.setItem('Counter', counter);
 }
