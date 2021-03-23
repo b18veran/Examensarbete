@@ -5,7 +5,7 @@ function startUp() {
      /* Om det är första gången det startas sätts start värdet till 0 och med,
      ett ',' efter för tydlighet. */
     if (localStorage.getItem("Page Loading") == null) {
-        localStorage.setItem("Page Loading", 0);
+        localStorage.setItem("Page Loading", 0 + " \n");
     }
     // Om countern är null sätts den till 0. 
     if (localStorage.getItem("Counter") == null) {
