@@ -5,11 +5,11 @@ function startUp() {
      /* Om det är första gången det startas sätts start värdet till 0 och med,
      ett ',' efter för tydlighet. */
     if (localStorage.getItem("Page Loading") == null) {
-        localStorage.setItem("Page Loading", 0 + ",\n");
+        localStorage.setItem("Page Loading", 0);
     }
     // Om countern är null sätts den till 0. 
     if (localStorage.getItem("Counter") == null) {
-        localStorage.setItem("Counter", 0);
+        localStorage.setItem("Counter", 0) + " \n";
     }
     // Ser till att den itereras endast 5 gånger.
     if (counter <= 4) {
