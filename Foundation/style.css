@@ -3,34 +3,46 @@
     padding: 10px;
     box-shadow: 0 0 5px 2px rgba(163, 163, 163, 0.5);
 }
-.row{
+
+.row {
     max-width: 100%;
 }
+
 #information p {
     margin-left: 10px;
 }
+
 .rubrik {
     text-align: center;
     padding: 10px;
 }
+
 #outputValue {
     display: none;
 }
+
 .cell {
     margin-left: auto !important;
     margin-right: auto !important;
     width: 300px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
 }
-.footers{
+
+.footers {
     background-color: #e6e6e6;
     height: 40px;
 }
-.break{
+
+.break {
     height: 1px;
     width: 90vw;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     background-color: rgb(211, 166, 253);
-  }
- 
+}
+
+.card{
+    box-shadow: 0 0 5px 2px rgba(163, 163, 163, 0.5)!important;
+}
