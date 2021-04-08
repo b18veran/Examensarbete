@@ -12,7 +12,7 @@
   <script src="../experiment.js"></script>
   <link rel="stylesheet" href="style.css">
   <!-- Motion UI -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" />
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" /> -->
 </head>
 
 
@@ -25,7 +25,7 @@
     <div class="top-bar-left">
       <ul class="dropdown menu" data-dropdown-menu>
         <li><a id="logo" href="index.html" onclick="updateHistory('start');">Berryshop</a></li>
-        <li><a  onclick="showStart(); updateHistory('start');">Hem</a></li>
+        <li><a onclick="showStart(); updateHistory('start');">Hem</a></li>
         <li>
           <a>Produkter</a>
           <ul class="menu vertical">
@@ -41,7 +41,7 @@
   </div>
   <div id="start">
     <!-- Orbit -->
-    <div class="orbit" role="region" aria-label="bildorbit" data-orbit>
+<!--     <div class="orbit" role="region" aria-label="bildorbit" data-orbit>
       <div class="orbit-wrapper">
         <div class="orbit-controls">
           <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
@@ -73,7 +73,7 @@
         <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
         <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
       </nav>
-    </div>
+    </div> -->
     <!-- Info -->
     <div class="row" id="information">
       <div class="columns medium-3">
@@ -193,36 +193,36 @@
           vitamin A som håller hormonerna på plats. Mango sägs hämma vissa sjukdomars utveckling. Det sänker även
           kolesterolet. Mango fungerar även som ett reningsmedel för huden. Mango förbättrar även mättnadskänslan och
           enzymerna hjälper matsmältningen.</p>
-          <table class="hover">
-            <thead>
-              <tr>
-                <th width="150">Näringsinnehåll</th>
-                <th width="150">Mängd / 100g</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Vitamin A</td>
-                <td>10</td>
-              </tr>
-              <tr>
-                <td>Vitamin C</td>
-                <td>40</td>
-              </tr>
-              <tr>
-                <td>Kalcium</td>
-                <td>4</td>
-              </tr>
-              <tr>
-                <td>Järn</td>
-                <td>2</td>
-              </tr>
-              <tr>
-                <td>Kostfiber</td>
-                <td>8</td>
-              </tr>
-            </tbody>
-          </table>
+        <table class="hover">
+          <thead>
+            <tr>
+              <th width="150">Näringsinnehåll</th>
+              <th width="150">Mängd / 100g</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Vitamin A</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Vitamin C</td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td>Kalcium</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Järn</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Kostfiber</td>
+              <td>8</td>
+            </tr>
+          </tbody>
+        </table>
 
       </div>
     </div>
@@ -391,8 +391,12 @@
     <p> Licens CC0 gäller alla bilder på denna sidan - ändrad av Veronica Andersen</p>
   </div>
   <!-- Compressed JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation-essential/6.2.2/js/vendor/jquery.js" integrity="sha512-Jv40bbkvmOAhsXlBVsMMSndM4kdsgQ8CHeJMIaIVmv22VjQmIa+ktIHlnOBH85XDyY1AqojnpnkGyl9+NCs+gg==" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.0/js/foundation.min.js" integrity="sha512-vo7qbUTDymx2qDGSkPuxDON2bDY/B64YVTQz4O/gTxdR4l57lm0Lgkd2OoWH8/NjC4R5m8bBClevJmcZwMt6Dw==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation-essential/6.2.2/js/vendor/jquery.js"
+    integrity="sha512-Jv40bbkvmOAhsXlBVsMMSndM4kdsgQ8CHeJMIaIVmv22VjQmIa+ktIHlnOBH85XDyY1AqojnpnkGyl9+NCs+gg=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.0/js/foundation.min.js"
+    integrity="sha512-vo7qbUTDymx2qDGSkPuxDON2bDY/B64YVTQz4O/gTxdR4l57lm0Lgkd2OoWH8/NjC4R5m8bBClevJmcZwMt6Dw=="
+    crossorigin="anonymous"></script>
   <script>$(document).foundation();</script>
 
 </body>
