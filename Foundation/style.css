@@ -59,6 +59,9 @@
     right: 50px;
     cursor: pointer;
   }
+  .cartB img{
+    width: 30px;
+  }
   #cart{
     position: fixed;
     bottom: 50px;
