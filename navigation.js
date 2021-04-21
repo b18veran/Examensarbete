@@ -6,6 +6,7 @@ function showStart() {
     document.getElementById("productsShot").style.display = "none";
     document.getElementById("productsSmoothie").style.display = "none";
     document.getElementById("productsMilkshake").style.display = "none";
+    document.getElementById("cart").style.display = "none";
   }
   function showProductInfo() {
     document.getElementById("start").style.display = "none";
@@ -14,6 +15,7 @@ function showStart() {
     document.getElementById("productsShot").style.display = "none";
     document.getElementById("productsSmoothie").style.display = "none";
     document.getElementById("productsMilkshake").style.display = "none";
+    document.getElementById("cart").style.display = "none";
   }
   function showProductsJuice() {
     document.getElementById("start").style.display = "none";
@@ -22,6 +24,7 @@ function showStart() {
     document.getElementById("productsShot").style.display = "none";
     document.getElementById("productsSmoothie").style.display = "none";
     document.getElementById("productsMilkshake").style.display = "none";
+    document.getElementById("cart").style.display = "none";
   }
   function showProductsShot() {
     document.getElementById("start").style.display = "none";
@@ -30,6 +33,7 @@ function showStart() {
     document.getElementById("productsShot").style.display = "block";
     document.getElementById("productsSmoothie").style.display = "none";
     document.getElementById("productsMilkshake").style.display = "none";
+    document.getElementById("cart").style.display = "none";
   }
   function showProductsSmoothie() {
     document.getElementById("start").style.display = "none";
@@ -38,6 +42,7 @@ function showStart() {
     document.getElementById("productsShot").style.display = "none";
     document.getElementById("productsSmoothie").style.display = "block";
     document.getElementById("productsMilkshake").style.display = "none";
+    document.getElementById("cart").style.display = "none";
   }
   function showProductsMilkshake() {
     document.getElementById("start").style.display = "none";
@@ -46,10 +51,21 @@ function showStart() {
     document.getElementById("productsShot").style.display = "none";
     document.getElementById("productsSmoothie").style.display = "none";
     document.getElementById("productsMilkshake").style.display = "block";
+    document.getElementById("cart").style.display = "none";
   }
-  
-  
-  
+  function showCart() {
+    document.getElementById("cart").style.display = "block";
+  }
+  function closeCart() {
+    document.getElementById("cart").style.display = "none";
+  }
+  function addsToCart() {
+    document.getElementById("cartEmpty").style.display = "none";
+    document.getElementById("addsToCart").style.display = "block";
+  }
+  function closeCart() {
+    document.getElementById("cart").style.display = "none";
+  }
   /*_____________________________________Historik funktion________________________________*/
   
   function setupHistory() {
@@ -70,7 +86,7 @@ function showStart() {
       showProductsShot();
     }else if (event.state == "productsMilkshake") {
       showProductsMilkshake();
-    } else {
+    }else {
   
     }
   }

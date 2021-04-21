@@ -224,7 +224,7 @@
             </tr>
           </tbody>
         </table>
-
+        <div id="addToCart" onclick="addsToCart()">Lägg till i kundkorg</div>
       </div>
     </div>
 
@@ -240,7 +240,7 @@
             <div class="card-section">
               <h4>Apelsin Juice</h4>
               <p>Nypressade juicer i olika smaker för att passa alla olika behov.</p>
-              <a class="button" onclick = "showProductInfo()">Läs mer!</a>
+              <a class="button" onclick="showProductInfo()">Läs mer!</a>
             </div>
           </div>
         </div>
@@ -250,7 +250,7 @@
             <div class="card-section">
               <h4>Vattenmelon Juice</h4>
               <p>Nypressade shots i olika smaker för att passa alla olika behov.</p>
-              <a class="button" onclick = "showProductInfo()">Läs mer!</a>
+              <a class="button" onclick="showProductInfo()">Läs mer!</a>
             </div>
           </div>
         </div>
@@ -260,7 +260,7 @@
             <div class="card-section">
               <h4>Anananas Juice</h4>
               <p>Nypressade juicer i olika smaker för att passa alla olika behov.</p>
-              <a class="button" onclick = "showProductInfo()">Läs mer!</a>
+              <a class="button" onclick="showProductInfo()">Läs mer!</a>
             </div>
           </div>
         </div>
@@ -270,7 +270,7 @@
             <div class="card-section">
               <h4>Äpple Juice</h4>
               <p>Nypressade juicer i olika smaker för att passa alla olika behov.</p>
-              <a class="button" onclick = "showProductInfo()">Läs mer!</a>
+              <a class="button" onclick="showProductInfo()">Läs mer!</a>
             </div>
           </div>
         </div>
@@ -280,7 +280,7 @@
             <div class="card-section">
               <h4>Mango Juice</h4>
               <p>Nypressade juicer i olika smaker för att passa alla olika behov.</p>
-              <a class="button" onclick = "showProductInfo()">Läs mer!</a>
+              <a class="button" onclick="showProductInfo()">Läs mer!</a>
             </div>
           </div>
         </div>
@@ -297,7 +297,7 @@
             <div class="card-section">
               <h4 class="card-title">Ingefära shot</h4>
               <p class="card-text">This is a short card.</p>
-              <a class="button" onclick = "showProductInfo()">Läs mer!</a>
+              <a class="button" onclick="showProductInfo()">Läs mer!</a>
             </div>
           </div>
         </div>
@@ -314,7 +314,7 @@
             <div class="card-section">
               <h4>Jordgubbs smoothie</h4>
               <p class="card-text">This is a short card.</p>
-              <a class="button" onclick = "showProductInfo()">Läs mer!</a>
+              <a class="button" onclick="showProductInfo()">Läs mer!</a>
             </div>
           </div>
         </div>
@@ -324,7 +324,7 @@
             <div class="card-section">
               <h4>Spenat smoothie</h4>
               <p class="card-text">This is a short card.</p>
-              <a class="button" onclick = "showProductInfo()">Läs mer!</a>
+              <a class="button" onclick="showProductInfo()">Läs mer!</a>
             </div>
           </div>
         </div>
@@ -334,7 +334,7 @@
             <div class="card-section">
               <h4>Vildabär smoothie</h4>
               <p class="card-text">This is a short card.</p>
-              <a class="button" onclick = "showProductInfo()">Läs mer!</a>
+              <a class="button" onclick="showProductInfo()">Läs mer!</a>
             </div>
           </div>
         </div>
@@ -344,7 +344,7 @@
             <div class="card-section">
               <h4>Latte smoothie</h4>
               <p class="card-text">This is a short card.</p>
-              <a class="button" onclick = "showProductInfo()">Läs mer!</a>
+              <a class="button" onclick="showProductInfo()">Läs mer!</a>
             </div>
           </div>
         </div>
@@ -361,7 +361,7 @@
             <div class="card-section">
               <h4>Choklad milkshake</h4>
               <p class="card-text">This is a short card.</p>
-              <a class="button" onclick = "showProductInfo()">Läs mer!</a>
+              <a class="button" onclick="showProductInfo()">Läs mer!</a>
             </div>
           </div>
         </div>
@@ -371,7 +371,7 @@
             <div class="card-section">
               <h4>Vanilj milkshake</h4>
               <p class="card-text">This is a short card.</p>
-              <a class="button" onclick = "showProductInfo()">Läs mer!</a>
+              <a class="button" onclick="showProductInfo()">Läs mer!</a>
             </div>
           </div>
         </div>
@@ -381,7 +381,7 @@
             <div class="card-section">
               <h4>Brownie milkshake</h4>
               <p class="card-text">This is a short card.</p>
-              <a class="button" onclick = "showProductInfo()">Läs mer!</a>
+              <a class="button" onclick="showProductInfo()">Läs mer!</a>
             </div>
           </div>
         </div>
@@ -391,12 +391,36 @@
             <div class="card-section">
               <h4>Jordgubbs milkshake</h4>
               <p class="card-text">This is a short card.</p>
-              <a class="button" onclick = "showProductInfo()">Läs mer!</a>
+              <a class="button" onclick="showProductInfo()">Läs mer!</a>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+
+  <!------------------------------------------------- Kundvagn ------------------------------------------------>
+  <div class="cartB" onclick="showCart()"></div>
+  <div id="cart" style="display: none;">
+    <div id="close" onclick="closeCart()">X</div>
+    <div id="cartEmpty">
+      <p>Din kundkorg är tom!</p>
+      <p>:(</p>
+    </div>
+    <table class="hover" id="addsToCart" style="display: none;">
+      <thead>
+        <tr>
+          <th width="200">Antal</th>
+          <th width="200">Produkt</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1 st</td>
+          <td>Mango Juice</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
   <div class="footers">
     <p> Licens CC0 gäller alla bilder på denna sidan - ändrad av Veronica Andersen</p>

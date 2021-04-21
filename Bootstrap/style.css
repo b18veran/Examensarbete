@@ -29,3 +29,47 @@
   margin-right: auto;
   background-color: rgb(211, 166, 253);
 }
+.cartB{
+  background-color: #32dac5;
+  box-shadow: 0 0 5px 2px rgba(163, 163, 163, 0.5);
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  line-height: 50px;
+  text-align: center;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+}
+#cart{
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background-color: rgb(243, 243, 243);
+  box-shadow: 0 0 5px 2px rgba(163, 163, 163, 0.5);
+  border-radius: 5px;
+  width: 400px;
+  height: 250px;
+}
+#close{
+  background-color: rgb(211, 166, 253);
+  text-align: end;
+  padding: 10px;
+  cursor: pointer;
+}
+#addToCart{
+  width: 200px;
+  height: 50px;
+  background-color: rgb(211, 166, 253);
+  box-shadow: 0 0 5px 2px rgba(163, 163, 163, 0.5);
+  cursor: pointer;
+  line-height: 50px;
+  text-align: center;
+}
+#cartEmpty{
+  text-align: center;
+}
+#addsToCart{
+  width: 400px;
+}
