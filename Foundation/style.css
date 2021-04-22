@@ -90,4 +90,6 @@
   #cartEmpty{
     text-align: center;
   }
-  
+  #addsToCart{
+    width: 400px;
+  }
