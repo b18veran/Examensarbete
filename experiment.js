@@ -12,7 +12,7 @@ function startUp() {
         localStorage.setItem("Counter", 0) + " \n";
     }
     // Ser till att den itereras endast 5 gånger.
-    if (counter <= 10) {
+    if (counter <= 5) {
         var endTime = new Date().getTime();
         var theTime = endTime - startTime;
         endTime = localStorage.setItem("Tid", JSON.stringify(theTime)); 
