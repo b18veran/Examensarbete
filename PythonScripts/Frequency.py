@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import array
 
-file = "data"
+file = "Examen"
 df = pd.read_csv(file, sep=",", header=None, names=['Bootstrap','Foundation'])
 
 colors=["cyan", "purple"]

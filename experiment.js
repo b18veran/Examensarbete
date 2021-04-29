@@ -12,7 +12,8 @@ function startUp() {
         localStorage.setItem("Counter", 0) + " \n";
     }
     // Ser till att den itereras endast 5 gånger.
-    if (counter <= 5000) {
+    if (counter <= 5) {
+        setTimeout(function(){ 
         var endTime = new Date().getTime();
         var theTime = endTime - startTime;
         endTime = localStorage.setItem("Tid", JSON.stringify(theTime)); 
@@ -20,9 +21,10 @@ function startUp() {
         logo();
         localStorage.getItem(startTime);
         var delta = localStorage.getItem("Page Loading");
-        var measureDiff = theTime;
+        var measureDiff = theTime - 1000;
         delta += measureDiff + "\n";
         localStorage.setItem("Page Loading", delta);
+    }, 1000);
     }
 }
 function logo() {
