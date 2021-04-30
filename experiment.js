@@ -13,7 +13,6 @@ function startUp() {
     }
     // Ser till att den itereras endast 5 gånger.
     if (counter <= 50) {
-        setTimeout(function(){ 
         var endTime = new Date().getTime();
         var theTime = endTime - startTime;
         endTime = localStorage.setItem("Tid", JSON.stringify(theTime)); 
@@ -24,7 +23,6 @@ function startUp() {
         var measureDiff = theTime - 1000;
         delta += measureDiff + "\n";
         localStorage.setItem("Page Loading", delta);
-    }, 1000);
     }
 }
 function logo() {
