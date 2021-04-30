@@ -12,7 +12,7 @@ function startUp() {
         localStorage.setItem("Counter", 0) + " \n";
     }
     // Ser till att den itereras endast 5 gånger.
-    if (counter <= 5) {
+    if (counter <= 50) {
         setTimeout(function(){ 
         var endTime = new Date().getTime();
         var theTime = endTime - startTime;
