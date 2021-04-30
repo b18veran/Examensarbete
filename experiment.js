@@ -20,7 +20,7 @@ function startUp() {
         logo();
         localStorage.getItem(startTime);
         var delta = localStorage.getItem("Page Loading");
-        var measureDiff = theTime - 1000;
+        var measureDiff = theTime;
         delta += measureDiff + "\n";
         localStorage.setItem("Page Loading", delta);
     }
